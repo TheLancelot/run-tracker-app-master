@@ -1,0 +1,17 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: xZ5r9DRm/W6/ytCkiq9q3JqJn6AkY2Cnwy1EJoarCFY2QfxftzfJVaFxJFb9832bzutNhZhgUGG+KXP2Q8vYVrYh6hz+Vy9J7PTmI6h37gg/MbsTtcO2uXADpj3egi/bAHzRsL0ZHfbdhO+9KEsh35RM4AQUz883njglsvJ5/fz5bIdoAoHLw9mlIqzTMdD6L8TNInM2oGI+e8yHeVitTYB4St7p5toqrgrYGHK91BFSeaI0ww5EuSCGCMM8Iz0aSONj7qe5K+K2f4K0fmuaDgk4Iw3nuFOU6TWVKW/6cF6O5eF3VRLHXjtaiS7v/IGFxjfCVLDh48+dpUjuroH6feaknbI74Wc3yc04LfPfgKm70jwYWdM321LBd/GrRKryN6b3/58i2Dx5xFxE/alvsD5PlHeUozk9ZBrrUpkW588S0+yxXYV00kMjD4punmpniUbFaCZCiwx5eDxbVbt7WRJjM6XRtsxQ+XDTdyUlkNPmgL2fwnC/yL/dzVD8CpMYYZpbvolQbGM2Pk9O8mqGIWSpeM8mEWyN7lgP1pT6efDO/3uBwKHGdadq3Li/b8AIqQPTl9UP5ViXlHYEZaVwayH4qdDyZLs77klnXFKbmsPdhNzxuanByk/kIsWxLwfbPofaXN/Xz8QC6PMX1R12e1KXXzxyb/Op2sRMfKpSz4w=
+  app: pure-peak-20096
+  on:
+    repo: ispoljari/run-tracker-app
+branches:
+  only:
+  - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_bf2abbc3aa7a_key -iv $encrypted_bf2abbc3aa7a_iv
+  -in .env.enc -out .env -d
