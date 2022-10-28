@@ -108,6 +108,6 @@ function stopServer() {
 if (require.main === module) {
   runServer(DATABASE_URL);
 }
-const port = process.env.PORT || 8080;
-app.listen(port);
+// const port = process.env.PORT || 8080;
+// app.listen(port);
 module.exports = {app, runServer, stopServer};
