@@ -1,7 +1,7 @@
 # Run Tracker App
 
 ## LINK TO THE APP:
-[https://pure-peak-20096.herokuapp.com/](https://pure-peak-20096.herokuapp.com/)
+[https://fitgazing.herokuapp.com/](https://fitgazing.herokuapp.com/)
 
 ## SUMMARY
 This app is intended for athletes that wish to log their running activities and share them with other users on the platform. The design is inspired by glitch.com
